@@ -1,0 +1,265 @@
+html, body{
+    font-family: 'PT Sans Caption', sans-serif; /*Базовый шрифт*/
+    font-size: 16px; /*Базовый размер шрифта*/
+    line-height: 1.5; /*Базовая высота строчки*/
+
+}
+img{
+    display: inline-block;
+}
+a{
+  transition: 0.3s ease-out; /*Подсвечивание с задержкой для всех ссылок*/
+}
+                                            /*...............................GRID............................*/
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.col-4{
+    width: 360px; /*Ширина контент-один*/
+    margin-right: 30px; /*Отступ справа 30*/
+    float: left; /*Обтикание с левой стороны (Встают в одну линию)*/
+    text-align: center;
+}
+
+.col-4:last-child{
+    margin-right:0px; /*Выбирается последняя колонка, чтобы Убрать с нее отступ справа, чтобы колонки встали 3 в ряд*/
+}
+                                             /*...............................HEADER..........................*/
+.header {
+    background: #343c4e;
+    background-image: url("../images/img/Derevo_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*Фон порп. растягивается*/
+
+    height: 100vh; /*Фон в размер монитора*/
+
+    color: #FFF;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column; /*Дивы встали в колонку*/
+    align-items: center; /*Дивы в центре*/
+    justify-content: center; /*Вертикально в центр*/
+    position: relative;
+}
+.header_title {
+    font-size: 56px; /*Размер 1 дива*/
+    margin-bottom: 30px; /*Отступ снизу*/
+    font-family: 'Merriweather', serif;
+}
+.header_slogan {
+    font-size: 28px;
+    line-height: 42px;
+
+}
+.header_arrow{
+    width: 60px;
+    height: 50px;
+    margin-left: -30px;
+
+    font-size: 48px;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+/*Чтобы отступала от блока а не от всей страницы*/
+
+}
+                                            /*...............................CONTENT............................*/
+.content{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.content-item{
+     margin-bottom: 20px;
+}
+.title{
+    font-size: 46px; /*Размер текста заголовка*/
+    margin-bottom: 60px; /*Отступ снизу*/
+    font-family: 'Merriweather', serif;
+    text-align: center; /*По центру*/
+}
+.content-item_img{
+    margin-bottom: 17px;
+}
+.content-item_img img{
+  max-width: 100%; /*При уменьшении экрана на размер меньший размера картинки, то картинка должна подстроиться*/
+  height: auto;
+}
+.content-item_title{
+    font-size: 24px;
+    line-height: normal; /*Высота строчки*/
+    margin-bottom: 5px;
+}
+.content-item_title a{
+    text-decoration: none; /*Убираем стандартную полоску снизу у ссылки*/
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+.content-item_title a:hover{
+    color: #ae8c71; /*Изменения цвета заголовка при наведении*/
+    border-color: #ae8c71; /*Изменения цвета нижнего подчеркивания при наведении*/
+}
+.content-item_text {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+                                            /*...............................FOOTER............................*/
+.footer{
+  background-color: #1c1922;
+  color: #FFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+    
+}
+.footer p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+p.footer_name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  line-height: normal;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+    color: #FFF;
+
+}
+p.footer_social{
+  color: #FFF;
+  text-align: center;
+}
+p.footer_icon{
+  font-size: 32px;
+  text-align: center;
+}
+p.footer_icon a{
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 30px;
+}
+p.footer_icon a:last-child{
+  margin-right: 0px;
+}
+p.footer_icon a:hover{
+  color: #ae8c71;
+}
+.button{
+  font-weight: 700; /*Толщина шрифта*/
+  display: inline-block; /*Создается блочный элемент*/
+
+  border-width: 2px;
+  border-color: #FFF;
+  border-style: solid; /*Неприрывная линия*/
+  border-radius: 56px; /*Скругление углов*/
+
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase; /*Все буквы заглавные*/
+  letter-spacing: 1.6px; /*Расстояние между буквами*/
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 13px;
+}
+.button:hover{
+  color: #061634;
+  background-color: #FFF;
+}
+
+
+                                        /*...............................CONTENT_WORK_ONE............................*/
+.content_work_1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.content_work_1 img{
+  margin-bottom: 50px;
+  max-width: 100%; /*Адаптивная картинка*/
+  height: auto;
+  /*display: block; /*Кнопка не встает в одну линию с картинкой*/
+  height: 100vh; /*Фон в размер монитора*/
+}
+.button_back{
+  font-weight: 700; /*Толщина шрифта*/
+  display: inline-block; /*Создается блочный элемент*/
+
+  border-width: 2px;
+  border-color: #061634;
+  border-style: solid; /*Неприрывная линия*/
+  border-radius: 56px; /*Скругление углов*/
+
+  text-decoration: none;
+  color: #061634;
+  text-transform: uppercase; /*Все буквы заглавные*/
+  letter-spacing: 1.6px; /*Расстояние между буквами*/
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 13px;
+}
+.button_back:hover{
+  color: #FFF;
+  background-color: #061634;
+}
+
+                                        /*...............................Медиа-Запросы............................*/
+ /*При ширине экрана в 1160 и менее - будет выполняться медиа-запрос*/
+@media (max-width: 1160px) {
+  .container{
+    width: 100%;
+  }
+  .col-4{
+    width: 100%;
+
+    /*Реальная ширина = w100+border=0+p 15+15*/
+    box-sizing: border-box;
+
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  .header{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header_title{
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 15px;
+
+  }
+  .header_slogan{
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .content{
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .footer{
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
+/*
+    font-family: 'Merriweather', serif;
+    font-family: 'PT Sans Caption', sans-serif;
+*/
